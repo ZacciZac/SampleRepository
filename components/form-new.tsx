@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import { useEffect, useState } from "react";
-
 const SubscribeForm: NextPage = () => {
   const [subscribers, setSubscribers] = useState(0);
   useEffect(() => {
@@ -33,7 +32,7 @@ const SubscribeForm: NextPage = () => {
           placeholder="Email address"
         />
       </div>
-      <button className="cursor-pointer [border:none] p-0 bg-mediumslateblue rounded-xl w-[164px] h-14 shrink-0 overflow-hidden flex flex-col items-center justify-center hover:bg-darkorange sm:w-full sm:hover:bg-peru">
+      <button className="cursor-pointer [border:none] p-0 bg-mediumspringgreen rounded-xl w-[164px] h-14 shrink-0 overflow-hidden flex flex-col items-center justify-center hover:bg-darkorange sm:w-full sm:hover:bg-peru">
         <div className="overflow-hidden flex flex-col py-2 px-[22px] items-start justify-start">
           <div className="relative text-mini tracking-[0.46px] leading-[26px] uppercase font-medium font-components-button-large text-primary-contrast text-left">
             Subscribe

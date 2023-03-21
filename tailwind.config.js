@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         "primary-contrast": "#fff",
         whitesmoke: { "100": "#ebeef2", "200": "#eaeaea" },
-        mediumslateblue: "#0e5ef9",
+        mediumspringgreen: "#0ef9a4",
         darkorange: "#dc880b",
         peru: "#9e6104",
         slategray: "#576074",
