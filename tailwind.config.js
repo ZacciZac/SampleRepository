@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         "primary-contrast": "#fff",
         whitesmoke: { "100": "#ebeef2", "200": "#eaeaea" },
-        orange: "#f99a0e",
+        mediumslateblue: "#0e5ef9",
         darkorange: "#dc880b",
         peru: "#9e6104",
         slategray: "#576074",
@@ -28,7 +28,7 @@ module.exports = {
         "source-code-pro": "'Source Code Pro'",
         alegreya: "Alegreya",
       },
-      borderRadius: { "3xs": "10px" },
+      borderRadius: { xl: "20px", "3xs": "10px" },
     },
     fontSize: {
       mini: "15px",
