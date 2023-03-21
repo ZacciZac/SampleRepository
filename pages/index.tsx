@@ -2,6 +2,8 @@ import Image from 'next/image'
 import { Layout, Text, Page, Code, Link, Snippet } from '@vercel/examples-ui'
 
 import board from '../public/board.jpg'
+import CardsRow from '../components/cards-row'
+import SubscribeForm from '../components/form-new'
 
 function Home() {
   return (
@@ -21,6 +23,8 @@ function Home() {
           This will let us change the flow of the traffic quickly in case
           something fails.
         </Text>
+        <CardsRow></CardsRow>
+        <SubscribeForm></SubscribeForm>
       </section>
       <section className="flex flex-col gap-3">
         <Text variant="h2">How to do it?</Text>

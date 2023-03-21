@@ -1,11 +1,21 @@
 import type { NextPage } from "next";
+import { useEffect, useState } from "react";
 
 const SubscribeForm: NextPage = () => {
+  const [subscribers, setSubscribers] = useState(0);
+  useEffect(() => {
+    async function getSubscribers() {
+      let t = await fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json())
+      console.log(t.length)
+      setSubscribers(t.length)
+    }
+    getSubscribers()
+  }, [0])
   return (
     <div className="rounded-xl bg-primary-contrast shadow-[0px_0px_24px_rgba(0,_0,_0,_0.03)] box-border w-[509px] flex flex-col py-7 px-[30px] items-start justify-start gap-[17px] max-w-full text-left text-3xl text-darkslategray font-poppins border-[1px] border-solid border-whitesmoke-200">
       <div className="self-stretch flex flex-col items-start justify-start">
         <div className="self-stretch relative leading-[34px] font-semibold">
-          140,000 people have signed up
+          {subscribers} people have signed up
         </div>
         <div className="self-stretch relative text-lg leading-[34px] font-components-button-large text-slategray">
           Fill in your details to join the party!
