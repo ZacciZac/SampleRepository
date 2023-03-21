@@ -2,7 +2,6 @@ import Image from 'next/image'
 import { Layout, Text, Page, Code, Link, Snippet } from '@vercel/examples-ui'
 
 import board from '../public/board.jpg'
-import BlogSection from '../components/blog-section'
 
 function Home() {
   return (
@@ -22,7 +21,6 @@ function Home() {
           This will let us change the flow of the traffic quickly in case
           something fails.
         </Text>
-        <div className='h-10 bg-rose-600 p-10'>Hello</div>
       </section>
       <section className="flex flex-col gap-3">
         <Text variant="h2">How to do it?</Text>
