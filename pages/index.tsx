@@ -2,10 +2,11 @@ import Image from 'next/image'
 import { Layout, Text, Page, Code, Link, Snippet } from '@vercel/examples-ui'
 
 import board from '../public/board.jpg'
+import BlogSection from '../components/blog-section'
 
 function Home() {
   return (
-    <Page className="flex flex-col gap-12">
+    <div className = "max-w-[1440px] mx-auto px-5">
       <section className="flex flex-col gap-6">
         <Text variant="h1">Maintenance page usage example</Text>
         <Text>
@@ -16,13 +17,13 @@ function Home() {
           previously generated static page and Edge Config to give the users
           dynamic at the speed of static.
         </Text>
-        <Image src={board} alt="Graph showing how to use middleware" />
+        <Image width={500} src={board} alt="Graph showing how to use middleware" />
         <Text>
           This will let us change the flow of the traffic quickly in case
           something fails.
         </Text>
+        <div className='h-10 bg-rose-600 p-10'>Hello</div>
       </section>
-
       <section className="flex flex-col gap-3">
         <Text variant="h2">How to do it?</Text>
         <Text>
@@ -54,10 +55,10 @@ export async function middleware(req: NextRequest) {
           route.
         </Text>
       </section>
-    </Page>
+  </div>
   )
 }
 
-Home.Layout = Layout
+//Home.Layout = Layout
 
 export default Home
